@@ -1,0 +1,395 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guarder</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .color-bg {
+          @apply isolate after:absolute after:inset-0 relative after:z-[-1] after:mix-blend-multiply after:bg-black after:opacity-40
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            backgroundImage: {
+              hero: "url('./image/hero-bg.jpg')",
+              contact:
+                "url('./image/contact-bg.jpg')",
+              t1: "url('./image/t1.jpg')",
+              t2: "url('./image/t2.jpg')",
+              t3: "url('./image/t3.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- start contact -->
+    <div class="bg-hero h-[100vh] color-bg">
+      <div class="py-[15px] bg-black">
+        <div class="container m-auto">
+          <ul class="flex justify-between text-white items-center">
+            <li>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-location-dot"></i></span
+              ><span class="ml-2 hidden sm:inline-block">
+                Lorem ipsum dolor sit amet,</span
+              >
+            </li>
+            <li>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-phone"></i></span
+              ><span class="ml-2 hidden sm:inline-block">
+                Call : +01 1234567890</span
+              >
+            </li>
+            <li>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-message"></i></span
+              ><span class="ml-2 hidden sm:inline-block"> demo@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end contact -->
+
+      <!-- start navbar -->
+      <div class="container m-auto">
+        <div class="flex justify-between items-center text-white">
+          <p class="text-2xl font-bold">Guarder</p>
+          <ul class="flex text- gap-x-[2px] text-[18px]">
+            <li>
+              <a
+                class="hover:bg-black hidden lg:inline-block px-4 pt-9 pb-3 transition-[0.2]"
+                href="/"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-black hidden lg:inline-block px-4 pt-9 pb-3 transition-[0.2]"
+                href="/"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-black hidden lg:inline-block px-4 pt-9 pb-3 transition-[0.2]"
+                href="/"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-black hidden lg:inline-block px-4 pt-9 pb-3 transition-[0.2]"
+                href="/"
+                >GUARDS</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-black hidden lg:inline-block px-4 pt-9 pb-3 transition-[0.2]"
+                href="/"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+          <span onclick="console.log('gg')" class="inline lg:hidden"
+            ><i class="hidden fa-solid fa-bars fa-2xl"></i
+          ></span>
+        </div>
+      </div>
+      <!-- end navbar -->
+      <!-- start slider -->
+      <div class="container m-auto mt-20">
+        <div
+          class="text-white max-w-[530px] text-center md:text-left m-auto md:m-0"
+        >
+          <p class="text-5xl font-bold">YOUR SAFTEY</p>
+          <p class="text-5xl font-bold text-[#f1db25]">OUR RESPONSIBILITY</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod magna aliqua. Ut enim ad minim veniam
+          </p>
+          <div class="mt-8">
+            <button
+              class="bg-white px-[35px] py-[10px] text-black text-xl hover:bg-transparent border hover:text-white mr-2 transition-[0.3]"
+            >
+              Read more
+            </button>
+            <button
+              class="bg-[#f1db25] px-[35px] py-[10px] text-xl hover:bg-transparent border hover:text-[#f1db25] border-[#f1db25] transition-[0.3]"
+            >
+              Get a Quote
+            </button>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-20 px-4 text-center md:text-right">
+          <span
+            class="w-5 h-5 rounded-full bg-[#f1db25] inline-block cursor-pointer"
+          ></span>
+          <span
+            class="w-5 h-5 rounded-full bg-[#f1db25] inline-block cursor-pointer"
+          ></span>
+          <span
+            class="w-5 h-5 rounded-full bg-[#f1db25] inline-block cursor-pointer"
+          ></span>
+        </div>
+      </div>
+      <!-- end slider -->
+    </div>
+    <!-- start who are we  -->
+    <div
+      class="flex justify-center flex-col items-center py-20 gap-6 md:flex-row"
+    >
+      <img
+        class="w-[380px] h-[224px] lg:w-[480px] lg:h-[324px]"
+        src="./image/about-img.jpg"
+        alt="about"
+      />
+      <div
+        class="border border-gray-200 w-[425px] lg:w-[525px] flex flex-col items-start py-11 px-6"
+      >
+        <p class="font-bold text-4xl mb-2">WHO ARE WE?</p>
+        <span class="block w-10 h-2 bg-[#f1db25] mb-3 rounded-2xl"></span>
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit
+        </p>
+        <button
+          class="w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+        >
+          READ MORE
+        </button>
+      </div>
+    </div>
+    <!-- end who are we  -->
+    <!-- start SERVICES -->
+    <div class="bg-[#1c1c1c]">
+      <div class="container m-auto">
+        <div class="flex flex-col items-center pt-[90px]">
+          <p class="text-white text-4xl font-bold">OUR SERVICES</p>
+          <span class="block w-10 h-2 bg-[#f1db25] rounded-md mt-2"></span>
+        </div>
+        <div
+          class="flex md:flex-row items-center flex-col justify-center gap-8 mt-12 pb-[90px]"
+        >
+          <div
+            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+          >
+            <img
+              class="w-[75px] h-[75px]"
+              src="./image/s1.svg"
+              alt="svg"
+            />
+            <p class="font-bold text-xl">HOME SECURITY</p>
+            <p class="text-center">
+              Minima consequatur architecto eaque assumenda ipsam itaque quia
+              eum in doloribus debitis impedit ut minus tenetur corrupti
+              excepturi ullam.
+            </p>
+            <button
+              class="w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+            >
+              Read More
+            </button>
+          </div>
+          <div
+            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+          >
+            <img
+              class="w-[75px] h-[75px]"
+              src="./image/s2.svg"
+              alt="svg"
+            />
+            <p class="font-bold text-xl">OFFICE SECURITY</p>
+            <p class="text-center">
+              Minima consequatur architecto eaque assumenda ipsam itaque quia
+              eum in doloribus debitis impedit ut minus tenetur corrupti
+              excepturi ullam.
+            </p>
+            <button
+              class="w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+            >
+              Read More
+            </button>
+          </div>
+          <div
+            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+          >
+            <img
+              class="w-[75px] h-[75px]"
+              src="./image/s3.svg"
+              alt="svg"
+            />
+            <p class="font-bold text-xl">BODYGUARD</p>
+            <p class="text-center">
+              Minima consequatur architecto eaque assumenda ipsam itaque quia
+              eum in doloribus debitis impedit ut minus tenetur corrupti
+              excepturi ullam.
+            </p>
+            <button
+              class="w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end SERVICES -->
+    <!-- start GET IN TOUCH -->
+    <div
+      class="bg-contact w-full h-full color-bg flex flex-col justify-center items-center"
+    >
+      <div class="flex flex-col justify-center items-center gap-y-2">
+        <p class="text-white text-3xl font-bold">GET IN TOUCH</p>
+        <span class="block w-10 h-2 bg-[#f1db25] mb-3 rounded-2xl"></span>
+      </div>
+      <div class="flex flex-col items-center mt-8 gap-y-6">
+        <input
+          class="md:w-[650px] w-[350px] py-4 pl-4"
+          placeholder="FULL NAME"
+          type="text"
+        />
+        <input
+          class="md:w-[650px] w-[350px] py-4 pl-4"
+          placeholder="EMAIL"
+          type="text"
+        />
+        <input
+          class="md:w-[650px] w-[350px] py-4 pl-4"
+          placeholder="PHONE NUMBER"
+          type="text"
+        />
+        <input
+          class="md:w-[650px] w-[350px] py-12 pl-4"
+          placeholder="MESSAGE"
+          type="text"
+        />
+      </div>
+      <button
+        class="w-[169px] mt-8 h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+      >
+        SEND
+      </button>
+    </div>
+    <!-- end GET IN TOUCH -->
+    <!-- start GUARDS -->
+    <div class="container m-auto mt-20">
+      <div class="flex items-center flex-col">
+        <p class="text-3xl font-bold">GET IN TOUCH</p>
+        <span class="block w-10 h-2 bg-[#f1db25] mb-3 rounded-2xl"></span>
+        <p class="lg:w-[930px] w-[590px] text-center">
+          Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a
+          euismod suspendisse vel, sed quam nulla mauris iaculis. Erat eget
+          vitae malesuada, tortor tincidunt porta lorem lectus.
+        </p>
+      </div>
+      <div
+        class="container flex justify-center flex-col items-center md:flex-row gap-8 mt-16"
+      >
+        <div class="bg-t1 bg-center bg-cover flex w-[360px] h-[432px]">
+          <p
+            class="text-center block text-white px-10 py-6 self-end text-2xl bg-black/50 w-full"
+          >
+            Martin Anderson supervisor
+          </p>
+        </div>
+        <div class="bg-t2 bg-center bg-cover flex w-[360px] h-[432px]">
+          <p
+            class="text-center block text-white px-10 py-6 self-end text-2xl bg-black/50 w-full"
+          >
+            Denny Butler supervisor
+          </p>
+        </div>
+        <div class="bg-t3 bg-center bg-cover flex w-[360px] h-[432px]">
+          <p
+            class="text-center block text-white px-10 py-6 self-end text-2xl bg-black/50 w-full"
+          >
+            Nathan Mcpherson supervisor
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-[169px] h-[46px] bg-[#f1db25] m-auto block my-14 border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+    >
+      View All
+    </button>
+    <!-- end GUARDS -->
+    <!-- start footer  -->
+    <div class="bg-[#101010] h-[361px] w-full pt-[75px]">
+      <div
+        class="bg-[#101010] gap-4 container m-auto flex justify-around md:flex-row flex-col items-center text-center md:text-left text-white"
+      >
+        <div class="w-72">
+          <p class="font-bold text-2xl mb-6">Guarder</p>
+          <p>
+            dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
+            quisdotempor incididunt r
+          </p>
+        </div>
+        <div class="w-72">
+          <p class="text-2xl mb-6">Useful Link</p>
+          <p>
+            dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
+            quisdotempor incididunt r
+          </p>
+        </div>
+        <div class="w-72 flex flex-col justify-start">
+          <p class="text-2xl mb-6">Contact Us</p>
+          <div class="mb-2">
+            <i class="fa-solid fa-location-dot"></i
+            ><span class="ml-2">Lorem ipsum dolor sit amet,</span>
+          </div>
+          <div class="mb-2">
+            <i class="fa-solid fa-phone"></i
+            ><span class="ml-2">Call : +01 1234567890</span>
+          </div>
+          <div class="mb-2">
+            <i class="fa-solid fa-message"></i
+            ><span class="ml-2">demo@gmail.com</span>
+          </div>
+        </div>
+        <div
+          class="w-72 flex flex-col justify-center md:items-start items-center"
+        >
+          <p class="text-2xl mb-6">Newsletter</p>
+          <input
+            class="py-2 px-3 rounded-[30px] w-[262.2px] mb-4"
+            type="text"
+            placeholder="Enter Your Email"
+          />
+          <input
+            class="w-[162.2px] py-2 px-9 rounded-[30px] bg-[#f1db25]"
+            type="button"
+            value="SUBSCRIBE"
+          />
+          <div class="flex justify-start pt-6 gap-3">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#101010] container flex justify-center text-white/70 p-8">
+        © 2023 All Rights Reserved. Design by Free Html Templates
+      </div>
+    </div>
+    <!-- end footer  -->
+  </body>
+</html>
