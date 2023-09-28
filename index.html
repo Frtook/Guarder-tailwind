@@ -3,13 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guarder</title>
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .color-bg {
-          @apply isolate after:absolute after:inset-0 relative after:z-[-1] after:mix-blend-multiply after:bg-black after:opacity-40
-        }
-      }
-    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/all.min.css" />
     <script>
@@ -103,11 +96,11 @@
               >
             </li>
           </ul>
-          <span onclick="console.log('gg')" class="inline lg:hidden"
-            ><i class="hidden fa-solid fa-bars fa-2xl"></i
+          <span onclick="console.log('gg')" class="inline lg:hidden hiddens"
+            ><i class=" fa-solid fa-bars fa-2xl"></i
           ></span>
         </div>
-      </div>
+      </div> -->
       <!-- end navbar -->
       <!-- start slider -->
       <div class="container m-auto mt-20">
@@ -116,13 +109,13 @@
         >
           <p class="text-5xl font-bold">YOUR SAFTEY</p>
           <p class="text-5xl font-bold text-[#f1db25]">OUR RESPONSIBILITY</p>
-          <p>
+          <p class="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod magna aliqua. Ut enim ad minim veniam
           </p>
           <div class="mt-8">
             <button
-              class="bg-white px-[35px] py-[10px] text-black text-xl hover:bg-transparent border hover:text-white mr-2 transition-[0.3]"
+              class="bg-white px-[35px] py-[10px] text-black text-xl ho ver:bg-transparent border hover:text-white mr-2 transition-[0.3]"
             >
               Read more
             </button>
@@ -157,11 +150,11 @@
         alt="about"
       />
       <div
-        class="border border-gray-200 w-[425px] lg:w-[525px] flex flex-col items-start py-11 px-6"
+        class="border border-gray-200 max-w-[425px] lg:w-[525px] flex flex-col items-start py-11 px-6"
       >
         <p class="font-bold text-4xl mb-2">WHO ARE WE?</p>
         <span class="block w-10 h-2 bg-[#f1db25] mb-3 rounded-2xl"></span>
-        <p class="mb-4">
+        <p class=" mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -187,10 +180,10 @@
           class="flex md:flex-row items-center flex-col justify-center gap-8 mt-12 pb-[90px]"
         >
           <div
-            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+            class="max-w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
           >
             <img
-              class="w-[75px] h-[75px]"
+              class="max-w-[75px] h-[75px]"
               src="./image/s1.svg"
               alt="svg"
             />
@@ -201,16 +194,16 @@
               excepturi ullam.
             </p>
             <button
-              class="w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
+              class="max-w-[169px] h-[46px] bg-[#f1db25] border transition-[0.3] border-[#f1db25] text-white hover:text-[#f1db25] hover:bg-transparent"
             >
               Read More
             </button>
           </div>
           <div
-            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+            class="max-w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
           >
             <img
-              class="w-[75px] h-[75px]"
+              class="max-w-[75px] h-[75px]"
               src="./image/s2.svg"
               alt="svg"
             />
@@ -227,10 +220,10 @@
             </button>
           </div>
           <div
-            class="w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
+            class="max-w-[360px] h-[355px] bg-white flex flex-col justify-around items-center py-6 px-4"
           >
             <img
-              class="w-[75px] h-[75px]"
+              class="max-w-[75px] h-[75px]"
               src="./image/s3.svg"
               alt="svg"
             />
@@ -252,7 +245,7 @@
     <!-- end SERVICES -->
     <!-- start GET IN TOUCH -->
     <div
-      class="bg-contact w-full h-full color-bg flex flex-col justify-center items-center"
+      class="bg-contact w-full h-full isolate after:absolute after:inset-0 relative after:z-[-1] after:mix-blend-multiply after:bg-black after:opacity-40 flex flex-col justify-center items-center"
     >
       <div class="flex flex-col justify-center items-center gap-y-2">
         <p class="text-white text-3xl font-bold">GET IN TOUCH</p>
@@ -292,7 +285,7 @@
       <div class="flex items-center flex-col">
         <p class="text-3xl font-bold">GET IN TOUCH</p>
         <span class="block w-10 h-2 bg-[#f1db25] mb-3 rounded-2xl"></span>
-        <p class="lg:w-[930px] w-[590px] text-center">
+        <p class="lg:w-[930px] max-w-[590px] text-center">
           Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a
           euismod suspendisse vel, sed quam nulla mauris iaculis. Erat eget
           vitae malesuada, tortor tincidunt porta lorem lectus.
@@ -335,21 +328,21 @@
       <div
         class="bg-[#101010] gap-4 container m-auto flex justify-around md:flex-row flex-col items-center text-center md:text-left text-white"
       >
-        <div class="w-72">
+        <div class="max-w-72">
           <p class="font-bold text-2xl mb-6">Guarder</p>
           <p>
             dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
             quisdotempor incididunt r
           </p>
         </div>
-        <div class="w-72">
+        <div class="max-w-72">
           <p class="text-2xl mb-6">Useful Link</p>
           <p>
             dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
             quisdotempor incididunt r
           </p>
         </div>
-        <div class="w-72 flex flex-col justify-start">
+        <div class="max-w-72 flex flex-col justify-start">
           <p class="text-2xl mb-6">Contact Us</p>
           <div class="mb-2">
             <i class="fa-solid fa-location-dot"></i
@@ -386,7 +379,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#101010] container flex justify-center text-white/70 p-8">
+      <div class="bg-[#101010] text-center container flex justify-center text-white/70 p-8">
         © 2023 All Rights Reserved. Design by Free Html Templates
       </div>
     </div>
